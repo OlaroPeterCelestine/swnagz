@@ -1,0 +1,20 @@
+{
+  "name": "swangz-avenue",
+  "version": "1.0.0",
+  "description": "Swangz Avenue - Real Talk Official Website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "music",
+    "swangz-avenue",
+    "entertainment"
+  ],
+  "author": "Swangz Avenue",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}
+
