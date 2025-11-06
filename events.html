@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swangz Avenue - Events</title>
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dodl9nols/image/upload/v1761550044/SWANGZ-2022-logo-2_autowc.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Norwester:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Norwester', sans-serif; }
+    </style>
+    
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            if (menuBtn) {
+                menuBtn.addEventListener('click', function() {
+                    const menu = document.getElementById('mobile-menu');
+                    if (menu) {
+                        menu.classList.toggle('hidden');
+                        const icon = this.querySelector('i');
+                        if (icon) {
+                            if (menu.classList.contains('hidden')) {
+                                icon.classList.remove('fa-times');
+                                icon.classList.add('fa-bars');
+                            } else {
+                                icon.classList.remove('fa-bars');
+                                icon.classList.add('fa-times');
+                            }
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</head>
+<body class="bg-black text-white">
+    <!-- Header Section -->
+    <header class="fixed top-0 left-0 right-0 z-20 bg-black">
+        <div class="container mx-auto flex items-center justify-between px-4 sm:px-6 py-4">
+            <!-- Left Side: Logo and Navigation -->
+            <div class="flex items-center space-x-4 sm:space-x-12">
+                <a href="index.HTML"><img src="https://res.cloudinary.com/dodl9nols/image/upload/v1761550044/SWANGZ-2022-logo-2_autowc.png" alt="Swangz Avenue" class="h-8 sm:h-12"></a>
+                <nav class="hidden md:flex items-center space-x-4 lg:space-x-6 text-xs lg:text-sm tracking-widest">
+                    <a href="index.HTML" class="hover:text-gray-400 transition-colors">HOME</a>
+                    <a href="events.html" class="text-white border-b-2 border-white pb-1 hover:text-gray-400 hover:border-gray-400 transition-colors">EVENTS</a>
+                    <a href="production.html" class="hover:text-gray-400 transition-colors">PRODUCTION</a>
+                    <div class="relative group">
+                        <a href="services.html" class="hover:text-gray-400 transition-colors">SERVICES <i class="fas fa-chevron-down text-xs"></i></a>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-black opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-30 border border-gray-800">
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-900 transition-colors border-b border-gray-800">Production Services</a>
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-900 transition-colors border-b border-gray-800">Event Management</a>
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-900 transition-colors">Consulting</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="academy.html" class="hover:text-gray-400 transition-colors">ACADEMY <i class="fas fa-chevron-down text-xs"></i></a>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-black opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-30 border border-gray-800">
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-900 transition-colors border-b border-gray-800">Courses</a>
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-900 transition-colors border-b border-gray-800">Workshops</a>
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-900 transition-colors">Mentorship</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="blog.html" class="hover:text-gray-400 transition-colors">BLOG <i class="fas fa-chevron-down text-xs"></i></a>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-black opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-30 border border-gray-800">
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-900 transition-colors border-b border-gray-800">Latest Posts</a>
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-900 transition-colors border-b border-gray-800">Industry News</a>
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-900 transition-colors">Resources</a>
+                        </div>
+                    </div>
+                    <a href="careers.html" class="hover:text-gray-400 transition-colors">CAREERS</a>
+                </nav>
+            </div>
+
+            <!-- Right Side: Social Icons and Mobile Menu -->
+            <div class="flex items-center space-x-4 sm:space-x-6">
+                <div class="hidden md:flex items-center space-x-2 lg:space-x-4">
+                    <!-- Social Icons -->
+                    <a href="#" class="text-white hover:text-gray-400 transition-colors"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white hover:text-gray-400 transition-colors"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white hover:text-gray-400 transition-colors"><i class="fab fa-spotify"></i></a>
+                    <a href="#" class="text-white hover:text-gray-400 transition-colors"><i class="fab fa-apple"></i></a>
+                    <a href="#" class="text-white hover:text-gray-400 transition-colors"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="text-white hover:text-gray-400 transition-colors"><i class="fab fa-soundcloud"></i></a>
+                    <a href="#" class="text-white hover:text-gray-400 transition-colors"><i class="fab fa-x-twitter"></i></a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black border-t border-gray-800">
+            <nav class="container mx-auto px-4 py-6 space-y-4">
+                <a href="index.HTML" class="block text-gray-400 hover:text-white transition-colors text-sm tracking-widest">HOME</a>
+                <a href="events.html" class="block text-white border-b-2 border-white pb-2 text-sm tracking-widest">EVENTS</a>
+                <a href="production.html" class="block text-gray-400 hover:text-white transition-colors text-sm tracking-widest">PRODUCTION</a>
+                <a href="services.html" class="block text-gray-400 hover:text-white transition-colors text-sm tracking-widest">SERVICES</a>
+                <a href="academy.html" class="block text-gray-400 hover:text-white transition-colors text-sm tracking-widest">ACADEMY</a>
+                <a href="blog.html" class="block text-gray-400 hover:text-white transition-colors text-sm tracking-widest">BLOG</a>
+                <a href="careers.html" class="block text-gray-400 hover:text-white transition-colors text-sm tracking-widest">CAREERS</a>
+                <div class="pt-4 border-t border-gray-800 flex items-center space-x-4">
+                    <a href="#" class="text-white hover:text-gray-400 transition-colors"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white hover:text-gray-400 transition-colors"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white hover:text-gray-400 transition-colors"><i class="fab fa-spotify"></i></a>
+                    <a href="#" class="text-white hover:text-gray-400 transition-colors"><i class="fab fa-youtube"></i></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-28">
+        <!-- Timeline-style Events Layout -->
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="text-center mb-16">
+                <h1 class="text-6xl md:text-7xl font-bold tracking-wide mb-4">Upcoming Events</h1>
+                <p class="text-gray-400 text-lg">Join us for unforgettable live experiences</p>
+            </div>
+
+            <!-- Timeline Events -->
+            <div class="max-w-4xl mx-auto space-y-12">
+                <!-- Event 1 -->
+                <div class="flex gap-8 items-start">
+                    <div class="flex-shrink-0 w-32 text-right">
+                        <div class="text-3xl font-bold">25</div>
+                        <div class="text-lg text-gray-400">JUL 2024</div>
+                        <div class="text-sm text-gray-500 mt-1">2:00 AM</div>
+                    </div>
+                    <div class="flex-1 border-l-2 border-gray-800 pl-8 pb-12 relative">
+                        <div class="absolute -left-2 top-0 w-4 h-4 bg-white rounded-full border-2 border-gray-800"></div>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="relative h-64 rounded-xl overflow-hidden group">
+                                <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?q=80&w=2070&auto=format&fit=crop" alt="Astra Kulturhaus" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div>
+                                <h3 class="text-3xl font-bold mb-2">Astra Kulturhaus</h3>
+                                <p class="text-gray-400 mb-4">Berlin, Germany</p>
+                                <p class="text-sm text-gray-500 mb-6">Revaler Straße 99 10245 Berlin</p>
+                                <div class="flex gap-3">
+                                    <a href="#" class="px-6 py-2 bg-white text-black font-semibold tracking-widest hover:bg-gray-200 transition-colors text-sm">Get Tickets</a>
+                                    <a href="#" class="px-6 py-2 border border-white text-white font-semibold tracking-widest hover:bg-white hover:text-black transition-colors text-sm">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="flex gap-8 items-start">
+                    <div class="flex-shrink-0 w-32 text-right">
+                        <div class="text-3xl font-bold">20</div>
+                        <div class="text-lg text-gray-400">JAN 2024</div>
+                        <div class="text-sm text-gray-500 mt-1">1:00 AM</div>
+                    </div>
+                    <div class="flex-1 border-l-2 border-gray-800 pl-8 pb-12 relative">
+                        <div class="absolute -left-2 top-0 w-4 h-4 bg-white rounded-full border-2 border-gray-800"></div>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="relative h-64 rounded-xl overflow-hidden group">
+                                <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=2070&auto=format&fit=crop" alt="Primavera Sound" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div>
+                                <h3 class="text-3xl font-bold mb-2">Primavera Sound</h3>
+                                <p class="text-gray-400 mb-4">Barcelona, Spain</p>
+                                <p class="text-sm text-gray-500 mb-6">Parc del Fòrum</p>
+                                <div class="flex gap-3">
+                                    <a href="#" class="px-6 py-2 bg-white text-black font-semibold tracking-widest hover:bg-gray-200 transition-colors text-sm">Get Tickets</a>
+                                    <a href="#" class="px-6 py-2 border border-white text-white font-semibold tracking-widest hover:bg-white hover:text-black transition-colors text-sm">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="flex gap-8 items-start">
+                    <div class="flex-shrink-0 w-32 text-right">
+                        <div class="text-3xl font-bold">18</div>
+                        <div class="text-lg text-gray-400">SEP 2024</div>
+                        <div class="text-sm text-gray-500 mt-1">2:00 AM</div>
+                    </div>
+                    <div class="flex-1 border-l-2 border-gray-800 pl-8 pb-12 relative">
+                        <div class="absolute -left-2 top-0 w-4 h-4 bg-white rounded-full border-2 border-gray-800"></div>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="relative h-64 rounded-xl overflow-hidden group">
+                                <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c5b4?q=80&w=2070&auto=format&fit=crop" alt="Hammersmith Apollo" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div>
+                                <h3 class="text-3xl font-bold mb-2">Hammersmith Apollo</h3>
+                                <p class="text-gray-400 mb-4">London, UK</p>
+                                <p class="text-sm text-gray-500 mb-6">45 Queen Caroline St, London W6 9QH</p>
+                                <div class="flex gap-3">
+                                    <a href="#" class="px-6 py-2 bg-white text-black font-semibold tracking-widest hover:bg-gray-200 transition-colors text-sm">Get Tickets</a>
+                                    <a href="#" class="px-6 py-2 border border-white text-white font-semibold tracking-widest hover:bg-white hover:text-black transition-colors text-sm">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 4 -->
+                <div class="flex gap-8 items-start">
+                    <div class="flex-shrink-0 w-32 text-right">
+                        <div class="text-3xl font-bold">15</div>
+                        <div class="text-lg text-gray-400">APR 2024</div>
+                        <div class="text-sm text-gray-500 mt-1">2:00 AM</div>
+                    </div>
+                    <div class="flex-1 border-l-2 border-gray-800 pl-8 relative">
+                        <div class="absolute -left-2 top-0 w-4 h-4 bg-white rounded-full border-2 border-gray-800"></div>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="relative h-64 rounded-xl overflow-hidden group">
+                                <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=2070&auto=format&fit=crop" alt="Brooklyn Electronica" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div>
+                                <h3 class="text-3xl font-bold mb-2">Brooklyn Electronica Festival</h3>
+                                <p class="text-gray-400 mb-4">Brooklyn, NY</p>
+                                <p class="text-sm text-gray-500 mb-6">Barclays Center</p>
+                                <div class="flex gap-3">
+                                    <a href="#" class="px-6 py-2 bg-white text-black font-semibold tracking-widest hover:bg-gray-200 transition-colors text-sm">Get Tickets</a>
+                                    <a href="#" class="px-6 py-2 border border-white text-white font-semibold tracking-widest hover:bg-white hover:text-black transition-colors text-sm">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="mt-20 max-w-2xl mx-auto rounded-2xl border border-gray-800 p-8 text-center">
+                <h3 class="text-3xl font-bold mb-2">Stay in the loop</h3>
+                <p class="text-gray-400 mb-6">Get notified about new events and exclusive pre-sales.</p>
+                <form class="flex gap-3 max-w-md mx-auto">
+                    <input type="email" placeholder="your@email.com" class="flex-1 bg-transparent border border-gray-700 rounded-lg px-4 py-3 placeholder-gray-500 focus:outline-none focus:border-white">
+                    <button class="px-6 py-3 bg-white text-black font-semibold tracking-widest rounded-lg hover:bg-gray-200">Subscribe</button>
+                </form>
+            </div>
+
+            <!-- Past Events Section -->
+            <div class="mt-20">
+                <h2 class="text-4xl font-bold mb-8 text-center">Past Events</h2>
+                <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                    <div class="border border-gray-800 rounded-xl overflow-hidden group">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?q=80&w=2070&auto=format&fit=crop" alt="Past Event" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="text-sm text-gray-500 mb-2">March 15, 2024</div>
+                            <h3 class="text-xl font-bold mb-2">Summer Music Festival</h3>
+                            <p class="text-gray-400 text-sm">Kampala, Uganda</p>
+                        </div>
+                    </div>
+                    <div class="border border-gray-800 rounded-xl overflow-hidden group">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=2070&auto=format&fit=crop" alt="Past Event" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="text-sm text-gray-500 mb-2">February 8, 2024</div>
+                            <h3 class="text-xl font-bold mb-2">Urban Beats Concert</h3>
+                            <p class="text-gray-400 text-sm">Nairobi, Kenya</p>
+                        </div>
+                    </div>
+                    <div class="border border-gray-800 rounded-xl overflow-hidden group">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c5b4?q=80&w=2070&auto=format&fit=crop" alt="Past Event" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="text-sm text-gray-500 mb-2">January 20, 2024</div>
+                            <h3 class="text-xl font-bold mb-2">New Year Celebration</h3>
+                            <p class="text-gray-400 text-sm">Kigali, Rwanda</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Types Section -->
+            <div class="mt-20 max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold mb-8 text-center">Types of Events</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="border border-gray-800 rounded-xl p-8">
+                        <div class="text-4xl mb-4">🎵</div>
+                        <h3 class="text-2xl font-bold mb-3">Concerts & Festivals</h3>
+                        <p class="text-gray-400">Large-scale music events featuring top artists and emerging talent from across the region.</p>
+                    </div>
+                    <div class="border border-gray-800 rounded-xl p-8">
+                        <div class="text-4xl mb-4">🎤</div>
+                        <h3 class="text-2xl font-bold mb-3">Intimate Shows</h3>
+                        <p class="text-gray-400">Up-close performances in smaller venues for a more personal experience.</p>
+                    </div>
+                    <div class="border border-gray-800 rounded-xl p-8">
+                        <div class="text-4xl mb-4">🎪</div>
+                        <h3 class="text-2xl font-bold mb-3">Corporate Events</h3>
+                        <p class="text-gray-400">Professional entertainment solutions for corporate gatherings and brand activations.</p>
+                    </div>
+                    <div class="border border-gray-800 rounded-xl p-8">
+                        <div class="text-4xl mb-4">🎭</div>
+                        <h3 class="text-2xl font-bold mb-3">Special Occasions</h3>
+                        <p class="text-gray-400">Custom events tailored to celebrate milestones and special moments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-black text-white mt-20">
+        <div class="container mx-auto px-6 lg:px-8">
+            <!-- Main Footer Content -->
+            <div class="py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+                
+                <!-- Brand and Socials Column -->
+                <div class="lg:col-span-2">
+                    <img src="https://res.cloudinary.com/dodl9nols/image/upload/v1761550044/SWANGZ-2022-logo-2_autowc.png" alt="Swangz Avenue" class="h-12 mb-4">
+                    <p class="mt-4 text-gray-400 max-w-xs">
+                        A composer and musician who traverses the realms of electronic music with finesse.
+                    </p>
+                    <div class="mt-6 flex flex-wrap gap-4">
+                        <!-- Social Icons -->
+                        <a href="#" class="text-white hover:text-gray-400 transition-colors"><i class="fab fa-facebook-f text-2xl"></i></a>
+                        <a href="#" class="text-white hover:text-gray-400 transition-colors"><i class="fab fa-instagram text-2xl"></i></a>
+                        <a href="#" class="text-white hover:text-gray-400 transition-colors"><i class="fab fa-spotify text-2xl"></i></a>
+                        <a href="#" class="text-white hover:text-gray-400 transition-colors"><i class="fab fa-apple text-2xl"></i></a>
+                        <a href="#" class="text-white hover:text-gray-400 transition-colors"><i class="fab fa-youtube text-2xl"></i></a>
+                        <a href="#" class="text-white hover:text-gray-400 transition-colors"><i class="fab fa-soundcloud text-2xl"></i></a>
+                        <a href="#" class="text-white hover:text-gray-400 transition-colors"><i class="fab fa-x-twitter text-2xl"></i></a>
+                    </div>
+                </div>
+
+                <!-- Pages Links -->
+                <div>
+                    <h3 class="font-semibold text-lg">Pages</h3>
+                    <ul class="mt-4 space-y-3">
+                        <li><a href="index.HTML" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="events.html" class="text-gray-400 hover:text-white transition-colors">Events</a></li>
+                        <li><a href="index.HTML#our-talent" class="text-gray-400 hover:text-white transition-colors">Our Talent</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="production.html" class="text-gray-400 hover:text-white transition-colors">Production</a></li>
+                        <li><a href="careers.html" class="text-gray-400 hover:text-white transition-colors">Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services Links -->
+                <div>
+                    <h3 class="font-semibold text-lg">Services</h3>
+                    <ul class="mt-4 space-y-3">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Production Services</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Event Management</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Consulting</a></li>
+                    </ul>
+                </div>
+
+                <!-- Academy Links -->
+                <div class="lg:col-span-1 space-y-10">
+                    <div>
+                        <h3 class="font-semibold text-lg">Academy</h3>
+                        <ul class="mt-4 space-y-3">
+                            <li><a href="academy.html" class="text-gray-400 hover:text-white transition-colors">Courses</a></li>
+                            <li><a href="academy.html" class="text-gray-400 hover:text-white transition-colors">Workshops</a></li>
+                            <li><a href="academy.html" class="text-gray-400 hover:text-white transition-colors">Mentorship</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="py-8 border-t border-gray-800 flex justify-between items-center text-sm text-gray-500">
+                <p>© 2025 - Made for Swangz Avenue Ltd</p>
+                <p>Powered by Swangz Avenue</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

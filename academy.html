@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swangz Avenue - Academy</title>
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dodl9nols/image/upload/v1761550044/SWANGZ-2022-logo-2_autowc.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Norwester:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Norwester', sans-serif; }
+    </style>
+</head>
+<body class="bg-black text-white">
+    <!-- Header Section -->
+    <header class="fixed top-0 left-0 right-0 z-20 bg-black">
+        <div class="container mx-auto flex items-center justify-between px-6 py-4">
+            <!-- Left Side: Logo and Navigation -->
+            <div class="flex items-center space-x-12">
+                <a href="index.HTML"><img src="https://res.cloudinary.com/dodl9nols/image/upload/v1761550044/SWANGZ-2022-logo-2_autowc.png" alt="Swangz Avenue" class="h-12"></a>
+                <nav class="hidden md:flex items-center space-x-6 text-sm tracking-widest">
+                    <a href="index.HTML" class="hover:text-gray-400 transition-colors">HOME</a>
+                    <a href="events.html" class="hover:text-gray-400 transition-colors">EVENTS</a>
+                    <a href="production.html" class="hover:text-gray-400 transition-colors">PRODUCTION</a>
+                    <div class="relative group">
+                        <a href="services.html" class="hover:text-gray-400 transition-colors">SERVICES <i class="fas fa-chevron-down text-xs"></i></a>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-black opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-30 border border-gray-800">
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-900 transition-colors border-b border-gray-800">Production Services</a>
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-900 transition-colors border-b border-gray-800">Event Management</a>
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-900 transition-colors">Consulting</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="academy.html" class="text-white border-b-2 border-white pb-1 hover:text-gray-400 hover:border-gray-400 transition-colors">ACADEMY <i class="fas fa-chevron-down text-xs"></i></a>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-black opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-30 border border-gray-800">
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-900 transition-colors border-b border-gray-800">Courses</a>
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-900 transition-colors border-b border-gray-800">Workshops</a>
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-900 transition-colors">Mentorship</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="blog.html" class="hover:text-gray-400 transition-colors">BLOG <i class="fas fa-chevron-down text-xs"></i></a>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-black opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-30 border border-gray-800">
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-900 transition-colors border-b border-gray-800">Latest Posts</a>
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-900 transition-colors border-b border-gray-800">Industry News</a>
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-900 transition-colors">Resources</a>
+                        </div>
+                    </div>
+                    <a href="careers.html" class="hover:text-gray-400 transition-colors">CAREERS</a>
+                </nav>
+            </div>
+
+            <!-- Right Side: Social Icons -->
+            <div class="flex items-center space-x-6">
+                <div class="hidden md:flex items-center space-x-4">
+                    <!-- Social Icons -->
+                    <a href="#" class="text-white hover:text-gray-400 transition-colors"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white hover:text-gray-400 transition-colors"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white hover:text-gray-400 transition-colors"><i class="fab fa-spotify"></i></a>
+                    <a href="#" class="text-white hover:text-gray-400 transition-colors"><i class="fab fa-apple"></i></a>
+                    <a href="#" class="text-white hover:text-gray-400 transition-colors"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="text-white hover:text-gray-400 transition-colors"><i class="fab fa-soundcloud"></i></a>
+                    <a href="#" class="text-white hover:text-gray-400 transition-colors"><i class="fab fa-x-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-28">
+        <!-- Academy Hero -->
+        <section class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h1 class="text-6xl md:text-7xl font-bold tracking-wide mb-6">Swangz Academy</h1>
+                <p class="text-xl text-gray-300 mb-8">Empowering the next generation of music and production professionals</p>
+                <div class="flex gap-4 justify-center">
+                    <a href="#courses" class="px-8 py-4 bg-white text-black font-semibold tracking-widest hover:bg-gray-200 transition-colors">Browse Courses</a>
+                    <a href="#apply" class="px-8 py-4 border-2 border-white text-white font-semibold tracking-widest hover:bg-white hover:text-black transition-colors">Apply Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Catalog -->
+        <div id="courses" class="container mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+            <div class="mb-12">
+                <h2 class="text-4xl font-bold mb-4">Learning Tracks</h2>
+                <p class="text-gray-400">Choose your path to mastery</p>
+            </div>
+
+            <!-- Course Cards -->
+            <div class="space-y-8 max-w-5xl mx-auto">
+                <!-- Course 1 -->
+                <div class="grid md:grid-cols-2 gap-8 items-center border-b border-gray-800 pb-12">
+                    <div class="relative h-80 rounded-2xl overflow-hidden group">
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop" alt="Courses" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div>
+                        <div class="inline-block bg-white text-black text-xs font-semibold px-3 py-1 rounded-full mb-4">12 WEEKS</div>
+                        <h3 class="text-4xl font-bold mb-4">Structured Courses</h3>
+                        <p class="text-gray-300 mb-6 text-lg">Comprehensive learning paths in music production, audio engineering, and creative business.</p>
+                        <ul class="space-y-2 mb-6 text-gray-400">
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-white"></i> Weekly live sessions</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-white"></i> Hands-on projects</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-white"></i> Industry mentorship</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-white"></i> Certificate upon completion</li>
+                        </ul>
+                        <a href="#" class="inline-block px-6 py-3 border-2 border-white text-white font-semibold tracking-widest hover:bg-white hover:text-black transition-colors">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="grid md:grid-cols-2 gap-8 items-center border-b border-gray-800 pb-12">
+                    <div class="order-2 md:order-1">
+                        <div class="inline-block bg-white text-black text-xs font-semibold px-3 py-1 rounded-full mb-4">1-3 DAYS</div>
+                        <h3 class="text-4xl font-bold mb-4">Intensive Workshops</h3>
+                        <p class="text-gray-300 mb-6 text-lg">Deep-dive sessions with industry professionals covering specialized topics and techniques.</p>
+                        <ul class="space-y-2 mb-6 text-gray-400">
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-white"></i> Expert-led sessions</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-white"></i> Real-world case studies</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-white"></i> Networking opportunities</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-white"></i> Practical exercises</li>
+                        </ul>
+                        <a href="#" class="inline-block px-6 py-3 border-2 border-white text-white font-semibold tracking-widest hover:bg-white hover:text-black transition-colors">View Schedule</a>
+                    </div>
+                    <div class="relative h-80 rounded-2xl overflow-hidden group order-1 md:order-2">
+                        <img src="https://images.unsplash.com/photo-1511379938547-9f4b52e9b7f7?q=80&w=1974&auto=format&fit=crop" alt="Workshops" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="relative h-80 rounded-2xl overflow-hidden group">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop" alt="Mentorship" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div>
+                        <div class="inline-block bg-white text-black text-xs font-semibold px-3 py-1 rounded-full mb-4">ONGOING</div>
+                        <h3 class="text-4xl font-bold mb-4">1-on-1 Mentorship</h3>
+                        <p class="text-gray-300 mb-6 text-lg">Personalized guidance and feedback from experienced creators to accelerate your growth.</p>
+                        <ul class="space-y-2 mb-6 text-gray-400">
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-white"></i> Personalized sessions</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-white"></i> Portfolio reviews</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-white"></i> Career guidance</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-white"></i> Industry connections</li>
+                        </ul>
+                        <a href="#" class="inline-block px-6 py-3 border-2 border-white text-white font-semibold tracking-widest hover:bg-white hover:text-black transition-colors">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Success Stories -->
+            <div class="mt-20">
+                <h2 class="text-4xl font-bold mb-8 text-center">Success Stories</h2>
+                <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                    <div class="border border-gray-800 rounded-xl p-6">
+                        <div class="w-16 h-16 bg-gray-800 rounded-full mb-4"></div>
+                        <h3 class="text-xl font-bold mb-2">Alex Mwangi</h3>
+                        <p class="text-gray-400 text-sm mb-3">Music Production Graduate</p>
+                        <p class="text-gray-300 text-sm">"The academy gave me the skills and confidence to launch my own production studio. The mentorship program was invaluable."</p>
+                    </div>
+                    <div class="border border-gray-800 rounded-xl p-6">
+                        <div class="w-16 h-16 bg-gray-800 rounded-full mb-4"></div>
+                        <h3 class="text-xl font-bold mb-2">Grace Nakato</h3>
+                        <p class="text-gray-400 text-sm mb-3">Audio Engineering Graduate</p>
+                        <p class="text-gray-300 text-sm">"I landed my dream job at a major studio just three months after completing the course. The hands-on training was exceptional."</p>
+                    </div>
+                    <div class="border border-gray-800 rounded-xl p-6">
+                        <div class="w-16 h-16 bg-gray-800 rounded-full mb-4"></div>
+                        <h3 class="text-xl font-bold mb-2">David Ochieng</h3>
+                        <p class="text-gray-400 text-sm mb-3">Workshop Participant</p>
+                        <p class="text-gray-300 text-sm">"The intensive workshop transformed my understanding of live sound. I now handle major events with confidence."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="mt-20 max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
+                <div class="space-y-4">
+                    <div class="border border-gray-800 rounded-xl p-6">
+                        <h3 class="text-xl font-bold mb-2">What are the prerequisites for enrollment?</h3>
+                        <p class="text-gray-400">No prior experience required! Our courses are designed for beginners and advanced learners alike.</p>
+                    </div>
+                    <div class="border border-gray-800 rounded-xl p-6">
+                        <h3 class="text-xl font-bold mb-2">Are certificates provided upon completion?</h3>
+                        <p class="text-gray-400">Yes, all students receive a certificate of completion that's recognized in the industry.</p>
+                    </div>
+                    <div class="border border-gray-800 rounded-xl p-6">
+                        <h3 class="text-xl font-bold mb-2">Can I access course materials after completion?</h3>
+                        <p class="text-gray-400">Students have lifetime access to course materials and can revisit content anytime.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Application CTA -->
+            <div id="apply" class="mt-20 max-w-3xl mx-auto border-2 border-gray-800 rounded-2xl p-12 text-center">
+                <h3 class="text-4xl font-bold mb-4">Ready to Start Your Journey?</h3>
+                <p class="text-gray-400 mb-8 text-lg">Applications are now open for the next cohort. Limited spots available.</p>
+                <a href="#" class="inline-block px-8 py-4 bg-white text-black font-semibold tracking-widest hover:bg-gray-200 transition-colors">Start Application</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-black text-white mt-20">
+        <div class="container mx-auto px-6 lg:px-8">
+            <!-- Main Footer Content -->
+            <div class="py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+                
+                <!-- Brand and Socials Column -->
+                <div class="lg:col-span-2">
+                    <img src="https://res.cloudinary.com/dodl9nols/image/upload/v1761550044/SWANGZ-2022-logo-2_autowc.png" alt="Swangz Avenue" class="h-12 mb-4">
+                    <p class="mt-4 text-gray-400 max-w-xs">
+                        A composer and musician who traverses the realms of electronic music with finesse.
+                    </p>
+                    <div class="mt-6 flex flex-wrap gap-4">
+                        <!-- Social Icons -->
+                        <a href="#" class="text-white hover:text-gray-400 transition-colors"><i class="fab fa-facebook-f text-2xl"></i></a>
+                        <a href="#" class="text-white hover:text-gray-400 transition-colors"><i class="fab fa-instagram text-2xl"></i></a>
+                        <a href="#" class="text-white hover:text-gray-400 transition-colors"><i class="fab fa-spotify text-2xl"></i></a>
+                        <a href="#" class="text-white hover:text-gray-400 transition-colors"><i class="fab fa-apple text-2xl"></i></a>
+                        <a href="#" class="text-white hover:text-gray-400 transition-colors"><i class="fab fa-youtube text-2xl"></i></a>
+                        <a href="#" class="text-white hover:text-gray-400 transition-colors"><i class="fab fa-soundcloud text-2xl"></i></a>
+                        <a href="#" class="text-white hover:text-gray-400 transition-colors"><i class="fab fa-x-twitter text-2xl"></i></a>
+                    </div>
+                </div>
+
+                <!-- Pages Links -->
+                <div>
+                    <h3 class="font-semibold text-lg">Pages</h3>
+                    <ul class="mt-4 space-y-3">
+                        <li><a href="index.HTML" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="events.html" class="text-gray-400 hover:text-white transition-colors">Events</a></li>
+                        <li><a href="index.HTML#our-talent" class="text-gray-400 hover:text-white transition-colors">Our Talent</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="production.html" class="text-gray-400 hover:text-white transition-colors">Production</a></li>
+                        <li><a href="careers.html" class="text-gray-400 hover:text-white transition-colors">Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services Links -->
+                <div>
+                    <h3 class="font-semibold text-lg">Services</h3>
+                    <ul class="mt-4 space-y-3">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Production Services</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Event Management</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Consulting</a></li>
+                    </ul>
+                </div>
+
+                <!-- Academy Links -->
+                <div class="lg:col-span-1 space-y-10">
+                    <div>
+                        <h3 class="font-semibold text-lg">Academy</h3>
+                        <ul class="mt-4 space-y-3">
+                            <li><a href="academy.html" class="text-gray-400 hover:text-white transition-colors">Courses</a></li>
+                            <li><a href="academy.html" class="text-gray-400 hover:text-white transition-colors">Workshops</a></li>
+                            <li><a href="academy.html" class="text-gray-400 hover:text-white transition-colors">Mentorship</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="py-8 border-t border-gray-800 flex justify-between items-center text-sm text-gray-500">
+                <p>© 2025 - Made for Swangz Avenue Ltd</p>
+                <p>Powered by Swangz Avenue</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
